@@ -13,7 +13,7 @@ def chat():
         raise EnvironmentError(
             "GEMINI_API_KEY is not set.\n"
             "Get a FREE key at: https://aistudio.google.com/app/apikey\n"
-            "Then run:  export GEMINI_API_KEY=your_key_here"
+            "Then run:  export GEMINI_API_KEY=AIzaSyALyPoivUj_4fSzRNKhKuFaKhSvXmN7S18"
         )
 
     genai.configure(api_key=api_key)

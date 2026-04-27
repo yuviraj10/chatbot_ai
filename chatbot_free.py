@@ -8,12 +8,12 @@ SYSTEM_PROMPT = "You are a helpful assistant. Be concise and friendly."
 
 
 def chat():
-    api_key = os.environ.get("GEMINI_API_KEY")
+    api_key = os.environ.get("AIzaSyALyPoivUj_4fSzRNKhKuFaKhSvXmN7S18")
     if not api_key:
         raise EnvironmentError(
             "GEMINI_API_KEY is not set.\n"
             "Get a FREE key at: https://aistudio.google.com/app/apikey\n"
-            "Then run:  export GEMINI_API_KEY=AIzaSyALyPoivUj_4fSzRNKhKuFaKhSvXmN7S18"
+            "Then run:  export GEMINI_API_KEY="
         )
 
     genai.configure(api_key=api_key)
